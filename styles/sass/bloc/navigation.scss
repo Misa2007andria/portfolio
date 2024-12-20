@@ -1,26 +1,28 @@
-
 nav {
-    background-color: $nav-bg-color;
-    font-size: 20px;
+    background-color: $nav-background-color;
+    font-size: $font-size-small;
     border-radius: 0 0 15px 0;
     padding-bottom: 360px;
     text-align: center;
-  }
-  
-  li {
-    float: right;
-    display: block;
-    width: 100px;
-    height: 50px;
-    background: $highlight-color;
-    color: $button-text-color;
-    font-size: 20px;
-    line-height: 50px;
-    border-radius: 3px;
-    margin: 30px;
-  }
-  
-  a.about, a.projects, a.contact {
-    text-decoration: none;
-  }
-  
+
+    li {
+        float: right;
+        display: block;
+        width: 100px;
+        height: 50px;
+        background: rgba(92, 28, 36, 0.75);
+        color: #fff;
+        font-size: $font-size-small;
+        line-height: 50px;
+        border-radius: 3px;
+        margin: 30px;
+
+        &:hover {
+            background-color: rgba(92, 28, 36, 1);
+        }
+    }
+
+    a {
+        color: #fff;
+    }
+}

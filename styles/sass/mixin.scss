@@ -1,24 +1,45 @@
+@mixin font-size-responsive($small, $medium, $large, $x-large) {
+    font-size: $small;
 
-@mixin responsive($breakpoint) {
-    @if $breakpoint == 'mobile' {
-      @media screen and (max-width: 319px) {
-        @content;
-      }
+    @media screen and (min-width: 768px) {
+        font-size: $medium;
     }
-    @else if $breakpoint == 'tablet' {
-      @media screen and (min-width: 768px) {
-        @content;
-      }
+
+    @media screen and (min-width: 992px) {
+        font-size: $large;
     }
-    @else if $breakpoint == 'desktop' {
-      @media screen and (min-width: 992px) {
-        @content;
-      }
+
+    @media screen and (min-width: 1200px) {
+        font-size: $x-large;
     }
-    @else if $breakpoint == 'large-desktop' {
-      @media screen and (min-width: 1200px) {
-        @content;
-      }
+}
+
+
+@mixin responsive-padding($small, $medium, $large) {
+    padding: $small;
+
+    @media screen and (min-width: 768px) {
+        padding: $medium;
     }
-  }
-  
+
+    @media screen and (min-width: 992px) {
+        padding: $large;
+    }
+}
+
+
+@mixin font-size-responsive($small, $medium, $large, $x-large) {
+    font-size: $small;
+
+    @media screen and (min-width: 768px) {
+        font-size: $medium;
+    }
+
+    @media screen and (min-width: 992px) {
+        font-size: $large;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: $x-large;
+    }
+}

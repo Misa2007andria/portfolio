@@ -1,11 +1,20 @@
-$dark-gray: #2e2e2e;
-$primary-color: rgb(37, 33, 14);
-$accent-color: rgb(155, 136, 53);
-$nav-bg-color: rgb(58, 53, 42);
+$background-color: black;
+$nav-background-color: rgb(58, 53, 42);
+$header-bg-color: darkslategrey;
+$highlight-color: darkcyan;
+$text-color: darkgray;
 $button-bg-color: cadetblue;
-$light-bg-color: rgb(77, 76, 76);
-$darkcyan: darkcyan;
-$primary-text-color: darkgray;
-$highlight-color: #5c1c24c0;
-$button-text-color: #fff;
-$rgb-color:rgba(175, 164, 10, 0.615);
+$input-bg-color: rgb(77, 76, 76);
+
+
+$font-size-large: 50px;
+$font-size-medium: 40px;
+$font-size-small: 20px;
+$font-size-tiny: 16px;
+
+
+$font-family-main: Verdana,
+Geneva,
+Tahoma,
+sans-serif;
+$font-family-cursive: cursive;

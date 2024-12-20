@@ -1,22 +1,29 @@
+body {
+    font-family: $font-family-main;
+    background-color: $background-color;
+}
 
 h2 {
-    background-color: darkslategrey;
-    font-size: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: $primary-text-color;
-    margin: auto 0 20px;
-    border-radius: 15px;
+    background-color: $header-bg-color;
+    font-family: $font-family-main;
+    color: $text-color;
     text-align: center;
-  }
-  
-  h3 {
-    font-size: 40px;
-    border-bottom: 2px solid #afa40a9d;
-    color: $darkcyan;
-  }
-  
-  .text-1, .text-2, .text-3 {
+    border-radius: 15px;
+    margin: auto 0 20px;
+    @include font-size-responsive($font-size-medium, $font-size-medium, $font-size-large, 3.5rem);
+}
+
+h3 {
+    font-size: $font-size-medium;
+    border-bottom: 2px solid rgba(175, 164, 10, 0.615);
+    color: $highlight-color;
+    margin: 0 0 20px;
+}
+
+.text-1,
+.text-2,
+.text-3 {
     font-style: italic;
-    font-size: 20px;
-  }
-  
+    font-size: 1.25rem;
+    color: #fff;
+}
