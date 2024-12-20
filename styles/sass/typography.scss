@@ -1,0 +1,22 @@
+
+h2 {
+    background-color: darkslategrey;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $primary-text-color;
+    margin: auto 0 20px;
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 40px;
+    border-bottom: 2px solid #afa40a9d;
+    color: $darkcyan;
+  }
+  
+  .text-1, .text-2, .text-3 {
+    font-style: italic;
+    font-size: 20px;
+  }
+  
